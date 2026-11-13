@@ -47,7 +47,9 @@ window.ISMC_PORTAL = {
       name: "Clean Room Design",
       image: "assets/agents/06-cleanroom.jpg",
       imagePosition: "center 30%",
-      workplaces: []
+      workplaces: [
+        { id: "01", name: "MAU 工作站", url: "https://raw.githubusercontent.com/anderson829/ismc-staff-portal/main/mau/MAU_%E5%B7%A5%E4%BD%9C%E7%AB%99_V1.xlsx" }
+      ]
     },
     {
       id: "07",
