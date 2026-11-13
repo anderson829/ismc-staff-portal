@@ -78,7 +78,9 @@ window.ISMC_PORTAL = {
       name: "Digital twin clean room",
       image: "assets/agents/10-digital-twin.jpg",
       imagePosition: "center 40%",
-      workplaces: []
+      workplaces: [
+        { id: "01", name: "數位孿生無塵室", url: "https://ismc-cleanroom-twin-10.ismc-7100.chatgpt.site" }
+      ]
     }
   ]
 };
