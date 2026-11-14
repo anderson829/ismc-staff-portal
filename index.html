@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ismc 新新策劃工程顧問有限公司員工入口">
   <title>員工入口｜ismc 新新策劃工程顧問有限公司</title>
@@ -23,7 +24,18 @@
     <p class="header-title">員工入口</p>
   </header>
   <main id="app"></main>
-  <script src="js/config.js?v=20261114a"></script>
-  <script src="js/app.js?v=20261114a"></script>
+  <script>
+    (function () {
+      function append(src, next) {
+        var script = document.createElement("script");
+        script.src = src + "?v=" + Date.now();
+        if (next) script.onload = next;
+        document.body.appendChild(script);
+      }
+      append("js/config.js", function () {
+        append("js/app.js");
+      });
+    })();
+  </script>
 </body>
 </html>
